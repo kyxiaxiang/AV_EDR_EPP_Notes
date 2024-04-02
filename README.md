@@ -242,3 +242,85 @@ Arg /os_upgrade /q /p {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
 
 <img width="1075" alt="SentinelOne" src="https://github.com/kyxiaxiang/AV_EDR_EPP_Notes/assets/102843981/06979933-6f7e-4051-a526-59d7b848f5e5">
 
+
+------
+#CrowdStrike
+
+Only Check ntdll Hook~
+
+CrowdStrike Version 7.11.*
+
+Windows API Hook List (Inline) (may not be complete)
+
+```
+[*] Dll Name:   ntdll.dll
+        [*] NtAllocateVirtualMemory HAS been hooked!
+        [*] NtAllocateVirtualMemoryEx HAS been hooked!
+        [*] NtCreateMutant HAS been hooked!
+        [*] NtDeviceIoControlFile HAS been hooked!
+        [*] NtGetContextThread HAS been hooked!
+        [*] NtGetTickCount HAS been hooked!
+        [*] NtMapViewOfSection HAS been hooked!
+        [*] NtMapViewOfSectionEx HAS been hooked!
+        [*] NtProtectVirtualMemory HAS been hooked!
+        [*] NtQueryInformationThread HAS been hooked!
+        [*] NtQuerySystemTime HAS been hooked!
+        [*] NtQueueApcThread HAS been hooked!
+        [*] NtQueueApcThreadEx HAS been hooked!
+        [*] NtQueueApcThreadEx2 HAS been hooked!
+        [*] NtReadVirtualMemory HAS been hooked!
+        [*] NtResumeThread HAS been hooked!
+        [*] NtSetContextThread HAS been hooked!
+        [*] NtSetInformationProcess HAS been hooked!
+        [*] NtSetInformationThread HAS been hooked!
+        [*] NtSuspendThread HAS been hooked!
+        [*] NtUnmapViewOfSection HAS been hooked!
+        [*] NtUnmapViewOfSectionEx HAS been hooked!
+        [*] NtWriteVirtualMemory HAS been hooked!
+        [*] NtdllDefWindowProc_A HAS been hooked!
+        [*] NtdllDefWindowProc_W HAS been hooked!
+        [*] NtdllDialogWndProc_A HAS been hooked!
+        [*] NtdllDialogWndProc_W HAS been hooked!
+        [*] ZwAllocateVirtualMemory HAS been hooked!
+        [*] ZwAllocateVirtualMemoryEx HAS been hooked!
+        [*] ZwCreateMutant HAS been hooked!
+        [*] ZwDeviceIoControlFile HAS been hooked!
+        [*] ZwGetContextThread HAS been hooked!
+        [*] ZwMapViewOfSection HAS been hooked!
+        [*] ZwMapViewOfSectionEx HAS been hooked!
+        [*] ZwProtectVirtualMemory HAS been hooked!
+        [*] ZwQueryInformationThread HAS been hooked!
+        [*] ZwQuerySystemTime HAS been hooked!
+        [*] ZwQueueApcThread HAS been hooked!
+        [*] ZwQueueApcThreadEx HAS been hooked!
+        [*] ZwQueueApcThreadEx2 HAS been hooked!
+        [*] ZwReadVirtualMemory HAS been hooked!
+        [*] ZwResumeThread HAS been hooked!
+        [*] ZwSetContextThread HAS been hooked!
+        [*] ZwSetInformationProcess HAS been hooked!
+        [*] ZwSetInformationThread HAS been hooked!
+        [*] ZwSuspendThread HAS been hooked!
+        [*] ZwUnmapViewOfSection HAS been hooked!
+        [*] ZwUnmapViewOfSectionEx HAS been hooked!
+        [*] ZwWriteVirtualMemory HAS been hooked!
+        
+Total: 49 hooks
+```
+
+process information
+
+```
+CsSystemTray_*(version).exe
+CSFalconService.exe
+CSFalconContainer.exe
+```
+
+driver information
+
+```
+CSDeviceControl.sys
+CSFirmwareAnalysis.sys
+```
+Bypass CrowdStrike && run Mimikatz (just for fun *^_^*)
+
+![image](https://github.com/kyxiaxiang/AV_EDR_EPP_Notes/assets/102843981/360c4a5a-857e-4a5b-9f20-c1812c583363)
