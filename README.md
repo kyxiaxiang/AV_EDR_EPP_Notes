@@ -15,7 +15,7 @@ If you have any better suggestions, you can submit them to me through issues, an
 
 ------
 
-SentinelOne
+# SentinelOne
 
 Test environment: Windows Server 2019, SentinelOne 23.2.3.358 (now updated to 23.3.3.264)
 
