@@ -244,7 +244,7 @@ Arg /os_upgrade /q /p {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}
 
 
 ------
-#CrowdStrike
+# CrowdStrike
 
 Only Check ntdll Hook~
 
