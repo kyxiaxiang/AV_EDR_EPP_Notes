@@ -315,10 +315,14 @@ CSFalconService.exe
 CSFalconContainer.exe
 ```
 
+
 driver information
 
 ```
 CSDeviceControl.sys
+csagent.sys
+cspcm4.sys
+CSBoot.sys
 CSFirmwareAnalysis.sys
 ```
 Bypass CrowdStrike && run Mimikatz (just for fun *^_^*)
